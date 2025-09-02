@@ -2,6 +2,7 @@ package com.cryptigo.crystemplatemod;
 
 import com.cryptigo.crystemplatemod.block.ModBlocks;
 import com.cryptigo.crystemplatemod.component.ModDataComponentTypes;
+import com.cryptigo.crystemplatemod.effect.ModEffects;
 import com.cryptigo.crystemplatemod.item.ModItemGroups;
 import com.cryptigo.crystemplatemod.item.ModItems;
 import com.cryptigo.crystemplatemod.sound.ModSounds;
@@ -23,5 +24,7 @@ public class CrysTemplateMod implements ModInitializer {
 
 		ModDataComponentTypes.registerDataComponentTypes();
 		ModSounds.registerSounds();
+
+		ModEffects.registerEffects();
 	}
 }
