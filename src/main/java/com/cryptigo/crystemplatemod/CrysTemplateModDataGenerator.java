@@ -1,9 +1,11 @@
 package com.cryptigo.crystemplatemod;
 
 import com.cryptigo.crystemplatemod.datagen.*;
+import com.cryptigo.crystemplatemod.enchantment.ModEnchantments;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.registry.RegistryBuilder;
+import net.minecraft.registry.RegistryKeys;
 
 public class CrysTemplateModDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -20,6 +22,6 @@ public class CrysTemplateModDataGenerator implements DataGeneratorEntrypoint {
 
 	@Override
 	public void buildRegistry(RegistryBuilder registryBuilder) {
-
+		registryBuilder.addRegistry(RegistryKeys.ENCHANTMENT, ModEnchantments::bootstrap);
 	}
 }

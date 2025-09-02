@@ -3,6 +3,7 @@ package com.cryptigo.crystemplatemod;
 import com.cryptigo.crystemplatemod.block.ModBlocks;
 import com.cryptigo.crystemplatemod.component.ModDataComponentTypes;
 import com.cryptigo.crystemplatemod.effect.ModEffects;
+import com.cryptigo.crystemplatemod.enchantment.ModEnchantmentEffects;
 import com.cryptigo.crystemplatemod.item.ModItemGroups;
 import com.cryptigo.crystemplatemod.item.ModItems;
 import com.cryptigo.crystemplatemod.potion.ModPotions;
@@ -28,5 +29,7 @@ public class CrysTemplateMod implements ModInitializer {
 
 		ModEffects.registerEffects();
 		ModPotions.registerPotions();
+
+		ModEnchantmentEffects.registerEnchantmentEffects();
 	}
 }
