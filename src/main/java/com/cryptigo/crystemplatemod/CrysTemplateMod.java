@@ -4,6 +4,7 @@ import com.cryptigo.crystemplatemod.block.ModBlocks;
 import com.cryptigo.crystemplatemod.component.ModDataComponentTypes;
 import com.cryptigo.crystemplatemod.item.ModItemGroups;
 import com.cryptigo.crystemplatemod.item.ModItems;
+import com.cryptigo.crystemplatemod.sound.ModSounds;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -21,5 +22,6 @@ public class CrysTemplateMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		ModDataComponentTypes.registerDataComponentTypes();
+		ModSounds.registerSounds();
 	}
 }
