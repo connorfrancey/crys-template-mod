@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "crystemplatemod",
+	"version": "${version}",
+	"name": "Cry's Template Mod",
+	"description": "My personal Minecraft fabric template for building mods.",
+	"authors": [
+		"Connor Francey"
+	],
+	"contact": {
+		"homepage": "https://github.com/connorfrancey/",
+		"sources": "https://github.com/connorfrancey/crys-template-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/crystemplatemod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.cryptigo.crystemplatemod.CrysTemplateMod"
+		],
+		"fabric-datagen": [
+			"com.cryptigo.crystemplatemod.CrysTemplateModDataGenerator"
+		],
+		"client": [
+			"com.cryptigo.crystemplatemod.CrysTemplateModClient"
+		]
+	},
+	"mixins": [
+		"crystemplatemod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
