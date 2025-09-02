@@ -14,6 +14,10 @@ public class ModBlocks {
     public static final Block TEST_BLOCK = registerBlock("test_block",
             new Block(AbstractBlock.Settings.create()));
 
+    private static Block registerBlockWithoutBlockItem(String name, Block block) {
+        return Registry.register(Registries.BLOCK, Identifier.of(CrysTemplateMod.MOD_ID, name), block);
+    }
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(CrysTemplateMod.MOD_ID, name), block);
