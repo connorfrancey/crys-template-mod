@@ -1,6 +1,7 @@
 package com.cryptigo.crystemplatemod;
 
 import com.cryptigo.crystemplatemod.block.ModBlocks;
+import com.cryptigo.crystemplatemod.component.ModDataComponentTypes;
 import com.cryptigo.crystemplatemod.item.ModItemGroups;
 import com.cryptigo.crystemplatemod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -18,5 +19,7 @@ public class CrysTemplateMod implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModDataComponentTypes.registerDataComponentTypes();
 	}
 }
